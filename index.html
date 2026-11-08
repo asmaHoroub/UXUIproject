@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Training 2026</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="brand"><span class="cap"><i class="fa-solid fa-graduation-cap"></i></span><span data-k="brand"></span></div>
+    <div class="acts">
+      <button id="lang"><i class="fa-solid fa-globe"></i><span data-k="lang"></span></button>
+      <button id="add"><i class="fa-solid fa-plus"></i><span data-k="add"></span></button>
+      <button id="clr"><i class="fa-solid fa-trash-can"></i><span data-k="clear"></span></button>
+    </div>
+  </div>
+  <div id="extra"></div>
+</header>
+<div class="wrap">
+  <aside id="menu"></aside>
+  <div class="grip"></div>
+  <div class="right">
+    <main>
+      <div class="top">
+        <div class="video" id="vid"><h2 data-k="anim"></h2></div>
+        <div><model-viewer id="heart" src="heart.glb" alt="Human heart" camera-controls auto-rotate touch-action="pan-y" shadow-intensity="1" interaction-prompt="none"></model-viewer></div>
+      </div>
+      <div class="info" id="info"></div>
+    </main>
+    <footer data-k="foot"></footer>
+    <button class="fab" id="fab" aria-label="Add content"><i class="fa-solid fa-plus"></i></button>
+  </div>
+</div>
+</body>
+</html>
